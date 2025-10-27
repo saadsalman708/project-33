@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Screen display Starts from here -->
+    <div class="display">
+
+        <!-- Upcoming Car from front/UP -->
+        <div id="opps"></div>
+        <div style="display: none; background-color: #fff;" id="opps2"></div>
+
+        <!-- User's Car -->
+        <div id="car"></div>
+    </div>
+    <!-- Screen display Ends here -->
+
+
+
+
+    
+    <!-- touch display for mobiles or any device without keyboard -->
+    <div class="touchControl">
+         <div onclick="moveLeft()"></div>
+         <div onclick="moveRight()"></div>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+</html>

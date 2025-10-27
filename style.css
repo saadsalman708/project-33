@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+}
+
+
+
+.display {
+    margin: auto;
+    width: 300px;
+    height: 100dvh;
+    background-color: aqua;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(3 , 1fr); */
+    overflow: hidden;
+}
+
+
+
+
+
+@keyframes goingDown {
+    from {
+    margin-top: 0;
+    transform: translateY(-170px);
+    }
+    to {
+    margin-top: 103dvh;
+    transform: translateY(0px);
+    /* transform: translateY(950px); */
+    }
+}
+
+#opps, #opps2 {
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: #000;
+
+    /* grid-column: 3/3; */
+    animation: goingDown .8s linear infinite;
+}
+
+
+
+
+
+#car {
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: pink;
+    bottom: 0;
+    left: 100px;
+    /* transform: translateY(504px); */
+    /* grid-column: 2/3; */
+}
+
+
+
+
+
+.touchControl {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.touchControl div {
+    width: 50%;
+    height: 100dvh;
+}
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 768px) {
+
+    .display {
+        width: 100%;
+    }
+    
+    .opps , .car {
+        width: 33%;
+    }
+} */
